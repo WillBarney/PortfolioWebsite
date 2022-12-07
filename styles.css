@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html, body {
@@ -14,4 +13,51 @@ html, body {
 .site {
     width: 100%;
     height: 100%;
+}
+
+.v-toolbar {
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.v-toolbar p {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.v-toolbar p:hover {
+    border-bottom: 1px solid rebeccapurple;
+}
+
+.v-toolbar > .toolbar-links i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.v-toolbar > .toolbar-links i:hover {
+    color: rebeccapurple;
+}
+
+.site-content {
+    margin: 50px 0px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }
